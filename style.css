@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 h1,h2,h3,h4,h5,h6{
     color: #363958;
+    font-weight: 900;
 }
 p{
     color: dimgray;
@@ -16,8 +18,22 @@ p{
 .custom-btn{
     background-image: linear-gradient(#A4BC46,#8FA82A);
     padding: 2% 5%;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: 600;
+}
+.login-option{
+    width: 50%;
+    margin-top: 50px;
+}
+.see-more-btn{
+    text-decoration: none;
+    color: #8FA82A;
+    transition: .5s;
+}
+.see-more-btn:hover{
+    text-decoration: underline;
+    color: orange;
+    transform: scale(1.2);
 }
 .card-header{
     border-radius: 20px !important;
@@ -38,7 +54,37 @@ p{
 .about-icon{
     margin-right: 35px;
 }
+.footer-content{
+    background-color: papayawhip;
+    margin-top: 50px;
+    padding: 30px 15px;
+    border-radius: 5px;
+}
+.footer-content p{
+    font-size: 14px;
+    padding: 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #fae5c4;
+    cursor: pointer;
+}
+.social-link img{
+    width: 50px;
+}
+.payment-method img{
+    width: 75px;
+}
+.up-arrow{
+    padding: 0px 15px;
+    font-size: 33px;
+    float: right;
+}
+
+    /* rwd-section */
+
 @media(max-width: 768px){
+    .login-option{
+        width: 100%;
+    }
     .about-contents{
         display: block;
         text-align: center;
@@ -50,5 +96,8 @@ p{
     }
     .about-icon{
         margin-right: 0px;
+    }
+    .footer-content .col-md-4{
+        padding-bottom: 20px;
     }
 }

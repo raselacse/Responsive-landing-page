@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/916b67d552.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <header class="container">
+
+        <!-- navigation-section -->
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <div class="d-flex">
@@ -27,24 +33,27 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul style="margin-left: auto;" class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-dark px-4" aria-current="page" href="#">Home</a>
+                            <a id="home" class="nav-link text-dark px-4" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark px-4" href="#">Product</a>
+                            <a class="nav-link text-dark px-4" href="#products">Product</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark px-4" href="#">About Us</a>
+                            <a class="nav-link text-dark px-4" href="#about-section">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark px-4" href="#" tabindex="-1" aria-disabled="true">Contact
+                            <a class="nav-link text-dark px-4" href="#contact" tabindex="-1" aria-disabled="true">Contact
                                 Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!-- banner-section -->
+
         <section id="banner">
-            <div class="row">
+            <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-md-6">
                     <h1><span style="color: #FABE4C;" class="text-uppercase">be the penguins</span></h1>
                     <h1 class="text-uppercase">of winter</h1>
@@ -58,22 +67,36 @@
                     </a>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="logo icon/Group 33091.png" class="w-50" alt="...">
+                    <img src="logo icon/banner-big-sale.png" class="w-50" alt="...">
                 </div>
             </div>
         </section>
     </header>
     <main class="container">
+
+        <!-- login-section -->
+
+        <section id="login-section">
+            <div class="container d-flex justify-content-end">
+                <div class="input-group login-option">
+                    <input class="form-control" type="text" name="" id="" placeholder="user name or email">
+                    <input class="form-control" type="password" name="" id="" placeholder="password">
+                    <a style="background-color: #90A82B;" class="btn text-white" href="http://" target="_blank"
+                        rel="noopener noreferrer">Login</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- products-section -->
+
         <section id="products">
             <section class="women-jacket my-5">
-                <div>
-                    <h3 class="text-uppercase">woman jacket</h3>
-                </div>
+                <h3 class="text-uppercase">woman jacket</h3>
                 <hr class="horizontal-role">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col h-100">
-                        <div class="card border">
-                            <div class="card-header border border-white">
+                    <div class="col">
+                        <div class="card h-100 border-white">
+                            <div class="card-header border-white">
                                 <img src="images/SeekPng 1.png" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
@@ -81,9 +104,10 @@
                                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                     industry.</p>
                             </div>
-                            <div class="card-footer border border-white bg-white d-flex align-items-center justify-content-between">
+                            <div
+                                class="card-footer border-white bg-white d-flex align-items-center justify-content-between">
                                 <h3><span style="color: #FABE4C;">$252</span></h3>
-                                <a class="btn custom-btn border text-light" href="#">
+                                <a class="btn custom-btn text-light" href="#">
                                     <span style="margin-right: 10px;">
                                         <i class="fas fa-shopping-cart"></i>
                                     </span>BuyNow
@@ -91,17 +115,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col h-100">
-                        <div class="card border">
-                            <div class="card-header border border-white">
-                                <img src="images/SeekPng 1.png" class="card-img-top" alt="...">
+                    <div class="col">
+                        <div class="card h-100 border-white">
+                            <div class="card-header border-white">
+                                <img src="images/PngItem_2597366 1.png" class="card-img-top w-75" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Yellow Coat Jacket</h5>
+                                <h5 class="card-title">Ladies Jacket</h5>
                                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                     industry.</p>
                             </div>
-                            <div class="card-footer border border-white bg-white d-flex align-items-center justify-content-between">
+                            <div
+                                class="card-footer border-white bg-white d-flex align-items-center justify-content-between">
                                 <h3><span style="color: #FABE4C;">$252</span></h3>
                                 <a class="btn custom-btn border text-light" href="#">
                                     <span style="margin-right: 10px;">
@@ -111,17 +136,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col h-100">
-                        <div class="card border">
-                            <div class="card-header border border-white">
-                                <img src="images/SeekPng 1.png" class="card-img-top" alt="...">
+                    <div class="col">
+                        <div class="card h-100 border-white">
+                            <div class="card-header border-white">
+                                <img style="width: 83%;" src="images/image 15.png" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Yellow Coat Jacket</h5>
+                                <h5 class="card-title">Woman Leather Jacket</h5>
                                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                     industry.</p>
                             </div>
-                            <div class="card-footer border border-white bg-white d-flex align-items-center justify-content-between">
+                            <div
+                                class="card-footer border-white bg-white d-flex align-items-center justify-content-between">
                                 <h3><span style="color: #FABE4C;">$252</span></h3>
                                 <a class="btn custom-btn border text-light" href="#">
                                     <span style="margin-right: 10px;">
@@ -133,28 +159,101 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-end">
-                    <a class="btn custom-btn border text-light" href="#"><span
-                        style="margin-right: 10px;"><i class="fas fa-shopping-cart"></i></span>Buy
-                    Now</a>
+                    <a class="see-more-btn" href="#">see more</a>
                 </div>
             </section>
             <section class="men-jacket my-5">
                 <div>
-                    <h3 class="text-uppercase">woman jacket</h3>
+                    <h3 class="text-uppercase">Men jacket</h3>
+                </div>
+                <hr class="horizontal-role">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 border-white">
+                            <div class="card-header border-white">
+                                <img style="width: 79%;" src="images/image 11.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Snowboard Jacket Mens</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry.</p>
+                            </div>
+                            <div
+                                class="card-footer border-white bg-white d-flex align-items-center justify-content-between">
+                                <h3><span style="color: #FABE4C;">$252</span></h3>
+                                <a class="btn custom-btn border text-light" href="#">
+                                    <span style="margin-right: 10px;">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-white">
+                            <div class="card-header border-white">
+                                <img src="images/vippng 1.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Man Leather Jackets</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry.</p>
+                            </div>
+                            <div
+                                class="card-footer border-white bg-white d-flex align-items-center justify-content-between">
+                                <h3><span style="color: #FABE4C;">$252</span></h3>
+                                <a class="btn custom-btn border text-light" href="#">
+                                    <span style="margin-right: 10px;">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-white">
+                            <div class="card-header border-white">
+                                <img style="width: 72%;" src="images/toppng 1.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Man Casual Jackets</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry.</p>
+                            </div>
+                            <div
+                                class="card-footer border-white bg-white d-flex align-items-center justify-content-between">
+                                <h3><span style="color: #FABE4C;">$252</span></h3>
+                                <a class="btn custom-btn border text-light" href="#">
+                                    <span style="margin-right: 10px;">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <a class="see-more-btn" href="#">see more</a>
+                </div>
+            </section>
+            <section class="Shoes my-5">
+                <div>
+                    <h3 class="text-uppercase">Shoes</h3>
                 </div>
                 <hr class="horizontal-role">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col h-100">
                         <div class="card border">
                             <div class="card-header border border-white">
-                                <img src="images/vippng 1.png" class="card-img-top" alt="...">
+                                <img src="shoes/shoe-1.png" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Yellow Coat Jacket</h5>
                                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                     industry.</p>
                             </div>
-                            <div class="card-footer border border-white bg-white d-flex align-items-center justify-content-between">
+                            <div
+                                class="card-footer border border-white bg-white d-flex align-items-center justify-content-between">
                                 <h3><span style="color: #FABE4C;">$252</span></h3>
                                 <a class="btn custom-btn border text-light" href="#">
                                     <span style="margin-right: 10px;">
@@ -167,14 +266,15 @@
                     <div class="col h-100">
                         <div class="card border">
                             <div class="card-header border border-white">
-                                <img src="images/vippng 1.png" class="card-img-top" alt="...">
+                                <img src="shoes/shoe-2.png" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Yellow Coat Jacket</h5>
                                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                     industry.</p>
                             </div>
-                            <div class="card-footer border border-white bg-white d-flex align-items-center justify-content-between">
+                            <div
+                                class="card-footer border border-white bg-white d-flex align-items-center justify-content-between">
                                 <h3><span style="color: #FABE4C;">$252</span></h3>
                                 <a class="btn custom-btn border text-light" href="#">
                                     <span style="margin-right: 10px;">
@@ -187,14 +287,15 @@
                     <div class="col h-100">
                         <div class="card border">
                             <div class="card-header border border-white">
-                                <img src="images/vippng 1.png" class="card-img-top" alt="...">
+                                <img src="shoes/shoe-3.png" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Yellow Coat Jacket</h5>
                                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                     industry.</p>
                             </div>
-                            <div class="card-footer border border-white bg-white d-flex align-items-center justify-content-between">
+                            <div
+                                class="card-footer border border-white bg-white d-flex align-items-center justify-content-between">
                                 <h3><span style="color: #FABE4C;">$252</span></h3>
                                 <a class="btn custom-btn border text-light" href="#">
                                     <span style="margin-right: 10px;">
@@ -206,11 +307,55 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-end">
-                    <a class="btn text-info text-decoration-underline" href="#">see more</a>
+                    <a class="see-more-btn" href="#">see more</a>
                 </div>
             </section>
         </section>
-        <section class="about-section">
+        <section id="create-account">
+            <h3 class="mb-4">Create Account</h3>
+            <form class="row g-3 was-validated">
+                <div class="col-md-4">
+                    <label for="validationServer01" class="form-label">First name</label>
+                    <input type="text" class="form-control " id="validationServer01" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServer01" class="form-label">Last name</label>
+                    <input type="text" class="form-control " id="validationServer01" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServerEmail" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <input type="email" class="form-control " id="validationServerEmail"
+                            aria-describedby="inputGroupPrepend3 validationServerEmailFeedback" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServer01" class="form-label">Password</label>
+                    <input type="password" class="form-control " id="validationServer01" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServer01" class="form-label">Region</label>
+                    <input type="text" class="form-control " id="validationServer01" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServer01" class="form-label">Segment</label>
+                    <input type="text" class="form-control " id="validationServer01" required>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                            aria-describedby="invalidCheck3Feedback" required>
+                        <label class="form-check-label" for="invalidCheck3">
+                            Agree to terms and conditions
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button style="background-color: #3B55CE;" class="btn text-white" type="submit">Submit form</button>
+                </div>
+            </form>
+        </section>
+        <section id="about-section">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-md-6">
                     <div class="about-contents">
@@ -218,8 +363,8 @@
                             <img src="logo icon/image 12.png" class="about-icons" alt="">
                         </div>
                         <div>
-                            <h3>Free Exchanges</h3>
-                            <p>One of the many reasons you can shop with peace of mind.</p>
+                            <h5>Find the Perfect Fit</h5>
+                            <p>Everybody is different, which is why we offer styles for every body.</p>
                         </div>
                     </div>
                     <div class="about-contents">
@@ -227,7 +372,7 @@
                             <img src="logo icon/image 13.png" class="about-icons" alt="">
                         </div>
                         <div>
-                            <h3>Free Exchanges</h3>
+                            <h5>Free Exchanges</h5>
                             <p>One of the many reasons you can shop with peace of mind.</p>
                         </div>
                     </div>
@@ -236,7 +381,7 @@
                             <img src="logo icon/image 14.png" class="about-icons about-icon" alt="">
                         </div>
                         <div>
-                            <h3>Contact Our Seller</h3>
+                            <h5>Contact Our Seller</h5>
                             <p>They are here to help you. That's quite literally what we pay them for.</p>
                         </div>
                     </div>
@@ -246,9 +391,52 @@
                 </div>
             </div>
         </section>
+        <div class="up-arrow">
+            <a href="#home"><i class="fas fa-sort-up"></i></a>
+        </div>
     </main>
-    <!-- <script src="bootstrap-5/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"crossorigin="anonymous"></script>
+    <footer id="contact" class="container">
+        <div class="footer-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-uppercase">customer service</h6>
+                    <p>How To Shop On Pannda</p>
+                    <p>Cancellation, Return & Refund Policy</p>
+                    <p>EMI Policy</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-uppercase">about us</h6>
+                    <p>About Pannda</p>
+                    <p>Terms & Condition</p>
+                    <p>Privacy Policy</p>
+                    <p>Careers</p>
+                    <p>Some Day Delivery TC</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-uppercase">my account</h6>
+                    <p>My Account</p>
+                    <p>Addresses</p>
+                    <p>Track Your Order</p>
+                    <p>Pannda Certified</p>
+                    <p>Featured Recommendation</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-evenly">
+            <div class="social-link">
+                <img src="logo icon/facebook.png" alt="">
+                <img src="logo icon/twitter.png" alt="">
+            </div>
+            <div class="payment-method">
+                <img src="logo icon/master-card.png" alt="">
+                <img src="logo icon/visa-card.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
